@@ -149,21 +149,21 @@
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="dragon-box">
-          <h4 class="dragon-name">Ice island</class=></h4>
+          <h4 class="dragon-name">Crystal Pure</class=></h4>
           <img src="img/dragon/1.png" alt="Ice island" class="dragon-img">
          <a href="#" class="btn btn-light dragon-detail-btn">Show detail</a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="dragon-box">
-          <h4 class="dragon-name">Cristalis</class=></h4>
+          <h4 class="dragon-name">Crystal Legendary</class=></h4>
           <img src="img/dragon/2.png" alt="Ice island" class="dragon-img">
          <a href="#" class="btn btn-light dragon-detail-btn">Show detail</a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="dragon-box">
-          <h4 class="dragon-name">Book OF magic</class=></h4>
+          <h4 class="dragon-name">Crystal Primal</class=></h4>
           <img src="img/dragon/3.png" alt="Ice island" class="dragon-img">
          <a href="#" class="btn btn-light dragon-detail-btn">Show detail</a>
         </div>
@@ -193,17 +193,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
                 <form name="contact-form">
-                    <div class="mb-3">
+                    <div class="mb-3" >
                       <label for="name" class="form-label">Nama lengkap</label>
-                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required>
+                      <div class="valid-feedback">Nama Valid</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" >
                       <label for="email" class="form-label">Email </label>
-                      <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                      <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" >
                         <label for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                        <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
                       </div>
                     <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
                     <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -221,7 +222,8 @@
 
  <!-- Footer -->
  <footer class="bg-secondary text-white text-center pb-5">
-     <p>Created with  Fucking <i class="bi bi-stars text-warning"></i> by <a href="https://www.instagram.com/perdiana.tan/" class="text-white fw-bold">TNV</a></p>
+     <p>Created with  Fucking <i class="bi bi-stars text-warning"></i> by <a href="https://www.instagram.com/perdiana.tan/" target="_blank" class="text-white fw-bold">TNV</a></p>
+     <a href="https://www.youtube.com/channel/UC0Ud1qewAL4pDjBPFkEEKng" target="_blank" class="btn btn-danger" ><i class="bi bi-play-btn-fill"></i> Subscribe Now</a></p>
  </footer>
  <!-- Akhir footer -->
 
@@ -281,7 +283,6 @@
 	          VanillaTilt.init(document.querySelectorAll(".dragon-box"), {
 		        max: 35,
 		        speed: 1000,
-            glare: true,
 	      });
 </script>
 </body>
